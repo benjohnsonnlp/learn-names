@@ -1,0 +1,14 @@
+{
+  "name": "Learn Names",
+  "version": "1.0",
+  "description": "A tool for learning names",
+  "page_action": {
+    "default_popup": "main.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["activeTab", "declarativeContent"],
+  "manifest_version": 2
+}
