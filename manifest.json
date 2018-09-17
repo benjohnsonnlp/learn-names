@@ -9,6 +9,6 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": ["activeTab", "declarativeContent"],
+  "permissions": ["tabs", "activeTab", "declarativeContent"],
   "manifest_version": 2
 }

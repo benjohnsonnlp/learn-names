@@ -1,8 +1,10 @@
+
 let showQuiz = document.getElementById('show');
 showQuiz.onclick = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            {code: 'document.body.innerHTML = "";'});
+        chrome.tabs.executeScript({ file: "jquery.js" }, function() {
+            chrome.tabs.executeScript(
+                {file: 'quiz.js'});
+        });
     });
 };
