@@ -1,5 +1,5 @@
 
-let quizHtml = '';
+let quizHtml = '<div id="quiz">';
 let names = [];
 let images = [];
 
@@ -28,7 +28,13 @@ $.each(zipped, function(){
 
 });
 
+quizHtml += "</div>";
+
+let toolbar = '<div id="toolbar">' +
+    '<button style="margin: 5px" id="shuffle">Shuffle</button>' +
+    '</div>';
+
 $("html").html(
-    quizHtml
+    toolbar + quizHtml
 );
 
