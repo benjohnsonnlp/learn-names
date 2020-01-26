@@ -48,7 +48,7 @@ $.each(studentInfo, function(){
     id++;
 });
 
-quizHtml += "</div>";
+quizHtml += "</div><br/><br/>";
 
 quizHtml += "<div id='learned' style='1px solid'>";
 

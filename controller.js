@@ -10,7 +10,7 @@ $('#shuffle').click(function(){
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
-    $('.quiz span').css('background-color', 'black')
+    $('#quiz span').css('background-color', 'black')
 });
 
 $('.learnedCheck').click(function(){
