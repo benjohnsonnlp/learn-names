@@ -41,16 +41,16 @@ let studentInfo = zipped.map(function(item, i) {
 let id = 0;
 $.each(studentInfo, function(){
     quizHtml +=
-        '<div style="height:120px;width:300px;display:inline-block">' +
+        '<div class="student" style="height:120px;width:300px;display:inline-block">' +
         '<img studentId="' + this.id + '" src="' + this.image + '" style="width:100px; height:100px"/>'+
         '<span style="background-color: black" studentId=' + this.id + '>' + this.name +
-        '<form><input type="checkbox" value="true"/>Learned</form></span></div>';
+        '<form><input class="learnedCheck" type="checkbox" value="true"/>Learned</form></span></div>';
     id++;
 });
 
 quizHtml += "</div>";
 
-quizHtml += "<div id='learned'>";
+quizHtml += "<div id='learned' style='1px solid'>";
 
 
 
